@@ -141,16 +141,30 @@ img {
 
  }
  @media screen and (max-width: 480px) {
-    main{
-        width: 480px;
-    }
+    
     .container{
-        width: 400px;
+        width: 100%;
+        margin: 0;
     }
     .row{
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
     }
 
+    .lessons .col,
+    .steps .col,
+    div.container,
+    col .col-left,
+    .steps,
+    .container
+    {
+        padding: 0;
+    }
+    
+    .steps .col,
+    .lessons .col,
+    .why-us .col-left,
+    .why-us .col-right{
+        width: 100%;
+    }
  }
